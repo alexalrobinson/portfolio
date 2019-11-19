@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 70%, rgba(177,177,177,1) 100%);
+    font-family: 'Oswald', sans-serif;
+}
+
+#nav {
+    float: none;
+    text-align: center;
+    background-color: white;
+    border-top: 5px double black;
+    border-bottom: 5px double black;
+}
+
+button {
+    font-size: 100%;
+    font-family: inherit;
+    border: 0;
+    padding: 0;
+    background: none;
+    outline: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+#pfp {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 5px double black;
+}
+
+#profile {
+    background: white;
+    border: 5px double black;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+}
