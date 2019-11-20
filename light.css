@@ -5,6 +5,17 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
+a {
+    color: inherit;
+    text-decoration: inherit;
+    font-family: inherit;
+}
+
+a:hover {
+    color: inherit;
+    text-decoration: inherit;
+}
+
 #nav {
     float: none;
     text-align: center;
@@ -20,6 +31,7 @@ button {
     padding: 0;
     background: none;
     outline: none;
+    color: inherit;
 }
 
 button:focus {
