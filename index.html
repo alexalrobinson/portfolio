@@ -6,41 +6,44 @@
         <link rel="shortcut icon" href="alexa.ico">
 		<TITLE>Alexa Robinson</TITLE>
         <script src="https://kit.fontawesome.com/327de1ef48.js"></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-        <link rel = "stylesheet" type = "text/css" href = "light.css" id="light" name="light">
+        <link rel = "stylesheet" type = "text/css" href = "main.css">
         <link rel = "stylesheet" type = "text/css" href = "color.css" id="color" name="color">
         <link rel = "stylesheet" type = "text/css" href = "dark.css" id="dark" name="dark">
+        <link rel = "stylesheet" type = "text/css" href = "light.css" id="light" name="light">
 	</HEAD>
 	<BODY>
-    <h5 class="my-2" id="theme">
-        Current theme: 
-        <span id=name>Light</span>
-        <button id="themeChange"><i class="fas fa-sync-alt"></i></button>
-    </h5>
-    <div class="sticky-top pt-2 pb-1" id=nav>
-        <h2>
-            <a id="aboutBTN" href="#about">
-                <i class="fas fa-id-card"></i>
-            </a>
-            ∙∙∙∙∙
-            <a id="projectsBTN" href="#projects">
-                <i class="fas fa-laptop-code"></i>
-            </a>
-            ∙∙∙∙∙
-            <a id="skillsBTN" href="#skills">
-                <i class="fas fa-clipboard-list"></i>
-            </a>
-            ∙∙∙∙∙
-            <a id="educationBTN" href="#education">
-                <i class="fas fa-graduation-cap"></i>
-            </a>
-        </h2>
-    </div>
-    <section id="about">
-        <div class="container pt-2">
-            <div class="pt-2" id="profile">
-                <img src="pfp.jfif" alt="Avatar" id="pfp">
+        <h4 class="my-2" id="theme">
+            Current theme: 
+            <span id=name>Light</span>
+            <button id="themeChange"><i class="fas fa-sync-alt"></i></button>
+        </h4>
+        <div id=nav>
+            <h2>
+                <a id="aboutBTN" href="#about" class="navBTN">
+                    <span class="icon"><i class="fas fa-id-card"></i></span>
+                    <span class="icon-name hidden">ABOUT</span>
+                </a>
+                ∙∙∙∙∙
+                <a id="projectsBTN" href="#projects" class="navBTN">
+                    <span class="icon"><i class="fas fa-laptop-code"></i></span>
+                    <span class="icon-name hidden">PROJECTS</span>
+                </a>
+                ∙∙∙∙∙
+                <a id="skillsBTN" href="#skills" class="navBTN">
+                    <span class="icon"><i class="fas fa-clipboard-list"></i></span>
+                    <span class="icon-name hidden">SKILLS</span>
+                </a>
+                ∙∙∙∙∙
+                <a id="educationBTN" href="#education" class="navBTN">
+                    <span class="icon"><i class="fas fa-graduation-cap"></i></span>
+                    <span class="icon-name hidden">EDUCATION</span>
+                </a>
+            </h2>
+        </div>
+        <section class="container hidden" id="about">
+            <div id="profile">
+                <img src="pfp.jfif" alt="Avatar" class="roundIMG">
                 <h2 class="text-center" id="fullname">ALEXA ROBINSON</h2>
                 <p class="text-center">Junior Developer</p>
                 <h4>
@@ -48,51 +51,50 @@
                     <a href="https://github.com/alexalrobinson" target="_blank"><i class="fab fa-github"></i></a>
                 </h4>
             </div>
-        </div>
-    </section>
-    <section class="d-none" id="projects">
-        <div class="d-flex p-2 bd-highlight">
-            put details about my projects here
-        </div>
-    </section>
-    <section class="d-none" id="skills">
-        <div class="d-flex p-2 bd-hightlight justify-content-center">
-                put details about my skills here
-        </div>
-    </section>
-    <section class="d-none" id="education">
-        <div class="d-flex p-2 bd-highlight justify-content-center">
-                put details about my education here
-        </div>
-    </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="portfolio.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
-  </BODY>
+        </section>
+        <section class="container hidden" id="projects">
+            <div class="d-flex p-2 bd-highlight">
+                put details about my projects here
+            </div>
+        </section>
+        <section class="container hidden" id="skills">
+            <div id="languages">
+                <h3 class="title">Languages</h3>
+                <span class="skill">JavaScript</span>
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">C/C++</span>
+                <span class="skill">Java</span>
+                <span class="skill">Python</span>
+                <span class="skill">MIPS</span>
+                <span class="skill">VHDL</span>
+            </div>
+            <div id="add-ons">
+                <h3 class="title">Frameworks, Libraries & Databases</h3>
+                <span class="skill">jQuery</span>
+                <span class="skill">Bootstrap</span>
+                <span class="skill">Flask</span>
+                <span class="skill">SQLite</span>
+            </div>
+            <div id="tools">
+                <h3 class="title">Tools</h3>
+                <span class="skill">VS Code</span>
+                <span class="skill">Github</span>
+                <span class="skill">Firebase</span>
+                <span class="skill">Cloud 9 AWS</span>
+                <span class="skill">Eclipse</span>
+                <span class="skill">MS Office</span>
+            </div>
+        </section>
+        <section class="container hidden" id="education">
+            <div id="profile">
+                <img src="UofD.png" alt="School Emblem" class="roundIMG">
+                <h2>B.S. in Computer Engineering</h2>
+                <h4>Minor in Cybersecurity</h4>
+                <h2>University of Delaware</h2>
+            </div>
+        </section>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="portfolio.js"></script>
+    </BODY>
 </HTML>
