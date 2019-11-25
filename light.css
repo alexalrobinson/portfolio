@@ -1,54 +1,31 @@
 body {
-    text-align: center;
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,1) 70%, rgba(177,177,177,1) 100%);
-    font-family: 'Oswald', sans-serif;
-}
-
-a {
-    color: inherit;
-    text-decoration: inherit;
-    font-family: inherit;
-}
-
-a:hover {
-    color: inherit;
-    text-decoration: inherit;
 }
 
 #nav {
-    float: none;
-    text-align: center;
     background-color: white;
     border-top: 5px double black;
     border-bottom: 5px double black;
 }
 
-button {
-    font-size: 100%;
-    font-family: inherit;
-    border: 0;
-    padding: 0;
-    background: none;
-    outline: none;
-    color: inherit;
-}
-
-button:focus {
-    outline: none;
-}
-
 #pfp {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
     border: 5px double black;
 }
 
 #profile {
     background: white;
     border: 5px double black;
-    height: 300px;
-    width: 300px;
-    margin: auto;
+}
+
+.skill {
+    background: linear-gradient(0deg, rgba(100,100,100,1) 10%, rgba(0,0,0,1) 100%);
+    color: white;
+    box-shadow: 3px 3px rgba(0,0,0,0.25);
+}
+
+.skill:hover {
+    background: linear-gradient(0deg, rgba(177,177,177,1) 10%, rgba(255,255,255,1) 100%);
+    color: black;
+    border: 2px solid black;
 }
