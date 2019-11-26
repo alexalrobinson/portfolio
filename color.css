@@ -1,21 +1,28 @@
 body {
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 70%, rgba(204,204,255,1) 100%);
+    background-image: url(color.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
+#theme {
+    color: white;
+}
+
+/*
 #nav {
     background-color: white;
     border-top: 5px double black;
     border-bottom: 5px double black;
 }
-
-#pfp {
-    border: 5px double black;
-}
+*/
 
 #profile {
     background: white;
-    border: 5px double black;
 }
 
 .skill {
@@ -27,5 +34,9 @@ body {
 .skill:hover {
     background: linear-gradient(0deg, rgba(177,177,177,1) 10%, rgba(255,255,255,1) 100%);
     color: black;
-    border: 2px solid black;
+    border: 1px solid black;
+}
+
+.project {
+    background: rgba(255,255,255,0.5);
 }
