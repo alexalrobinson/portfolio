@@ -17,6 +17,7 @@ body {
     height: 100%;
     background-attachment: scroll;
     margin: 0;
+    padding-bottom: 10vh;
 }
 
 h2 {
