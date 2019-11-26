@@ -1,3 +1,25 @@
+body {
+    background-image: url(light.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*
+#nav {
+    background-color: white;
+    border-top: 5px double black;
+    border-bottom: 5px double black;
+}*/
+
+#profile {
+    background: white;
+}
+
 .skill {
     background: linear-gradient(0deg, rgba(100,100,100,1) 10%, rgba(0,0,0,1) 100%);
     color: white;
@@ -12,4 +34,5 @@
 
 .project {
     background: rgba(255,255,255,0.5);
+    border-radius: 15px;
 }
