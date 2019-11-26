@@ -100,10 +100,6 @@ button:focus {
     justify-content: space-around;
 }
 
-.project:last-of-type {
-    margin-bottom: 10vh;
-}
-
 .project-info {
     flex-grow: 1;
     margin: 0;
