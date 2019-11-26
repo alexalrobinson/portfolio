@@ -12,6 +12,7 @@ body {
     background-repeat: no-repeat;
     background-position: bottom;
     background-attachment: scroll;
+    background-size: 5em auto;
     margin: 0;
 }
 
