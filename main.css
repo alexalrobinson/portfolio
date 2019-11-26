@@ -10,7 +10,7 @@ body {
     font-family: 'Oswald', sans-serif;
     background-size: cover; 
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: bottom -18em;
     background-attachment: scroll;
     background-size: 5em auto;
     margin: 0;
