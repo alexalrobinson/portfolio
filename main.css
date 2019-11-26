@@ -117,3 +117,7 @@ p {
     margin: 0 auto;
     max-width: calc(30vw + 30vh);
 }
+
+.description {
+    background: white;
+}
