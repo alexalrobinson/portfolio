@@ -1,9 +1,11 @@
 window.addEventListener("scroll", () => {
-    if (window.scrollY < 100) {
+    if (window.scrollY < 150) {
         console.log("Not past 100px");
+        $('#navUp').attr('hidden', 'true');
     }
     else {
         console.log("Past 100px!");
+        $('#navUP').attr('hidden', 'false');
     }
 });
 
