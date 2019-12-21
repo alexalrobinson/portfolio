@@ -1,11 +1,11 @@
 $(window).scroll(() => {
     if (window.scrollY < 150) {
         console.log("Not past 100px");
-        $('#navUp').attr('hidden', true);
+        $('#navUp').hide();
     }
     else {
         console.log("Past 100px!");
-        $('#navUp').removeAttr('hidden');
+        $('#navUp').show();
     }
 });
 
