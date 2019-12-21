@@ -1,21 +1,11 @@
-/*function hashHandler(){
-    let hash = window.location.hash;
-    $("section").addClass("hidden");
-    if(hash === ""){
-        $("#about").removeClass("hidden");
+window.addEventListener("scroll", () => {
+    if (window.scrollY < 100) {
+        console.log("Not past 100px");
     }
     else {
-        $(hash).removeClass("hidden");
+        console.log("Past 100px!");
     }
-}
-
-$(document).ready(()=>{
-    hashHandler();
 });
-
-$(window).on('hashchange', ()=>{
-    hashHandler();
-})*/
 
 let themeClicks = 0;
 $('link[rel=stylesheet][href~="dark.css"]').attr('disabled', 'true');
@@ -43,13 +33,3 @@ $("#themeChange").click(()=>{
     }
     themeClicks++;
 });
-/*
-$(".navBTN").mouseover(function(){
-    $(this).children(".icon").addClass("hidden");
-    $(this).children(".icon-name").removeClass("hidden");
-});
-
-$(".navBTN").mouseout(function(){
-    $(this).children(".icon-name").addClass("hidden");
-    $(this).children(".icon").removeClass("hidden");
-});*/
