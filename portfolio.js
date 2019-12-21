@@ -5,7 +5,7 @@ $(window).scroll(() => {
     }
     else {
         console.log("Past 100px!");
-        $('#navUP').attr('hidden', 'false');
+        $('#navUp').removeAttr('hidden');
     }
 });
 
