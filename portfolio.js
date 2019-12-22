@@ -1,3 +1,4 @@
+$('#navUp').hide();
 $(window).scroll(() => {
     if (window.scrollY < 150) {
         $('#navUp').hide();
