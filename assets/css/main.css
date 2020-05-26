@@ -59,7 +59,7 @@ button:focus {
 }
 
 #profile {
-    margin: auto;
+    margin: auto 5vw;
     padding-top: 5px;
     grid-row: 1 / 3;
     width: 200px;
@@ -79,12 +79,12 @@ button:focus {
     margin-top: 5px;
 }
 
-.container {
-    margin-top: 2px;
+.grid {
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: auto auto auto;
-    justify-content: center;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 200px;
+    grid-gap: 20px;
+    position: relative;
 }
 
 .hidden {
