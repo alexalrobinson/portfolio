@@ -8,29 +8,27 @@ $(window).scroll(() => {
     }
 });
 
-let themeClicks = 0;
-$('link[rel=stylesheet][href~="assets/css/dark.css"]').attr('disabled', 'true');
-$('link[rel=stylesheet][href~="assets/css/color.css"]').attr('disabled', 'true');
+function setTheme(themeName) {
+    localStorage.setItem('theme', themeName);
+    document.documentElement.className = themeName;
+}
 
-$("#themeChange").click(()=>{
-    let factor = themeClicks % 3;
-    if(factor === 0){
-        $('link[rel=stylesheet][href~="assets/css/light.css"]').attr('disabled', 'true');
-        $('link[rel=stylesheet][href~="assets/css/color.css"]').attr('disabled', 'true');
-        $('link[rel=stylesheet][href~="assets/css/dark.css"]').removeAttr('disabled');
-        $('#name').html(`<i class="fas fa-moon"></i>`);
+// function to toggle between light and dark theme
+function toggleTheme() {
+    if (localStorage.getItem('theme') === 'theme-dark') {
+        setTheme('theme-light');
+    } else {
+        setTheme('theme-dark');
     }
-    else if(factor === 1){
-        $('link[rel=stylesheet][href~="assets/css/dark.css"]').attr('disabled', 'true');
-        $('link[rel=stylesheet][href~="assets/css/light.css"]').attr('disabled', 'true');
-        $('link[rel=stylesheet][href~="assets/css/color.css"]').removeAttr('disabled');
-        $('#name').html(`<i class="fas fa-palette"></i>`);
+}
+
+// Immediately invoked function to set the theme on initial load
+(function () {
+    if (localStorage.getItem('theme') === 'theme-dark') {
+        setTheme('theme-dark');
+        document.getElementById('slider').checked = false;
+    } else {
+        setTheme('theme-light');
+      document.getElementById('slider').checked = true;
     }
-    else{
-        $('link[rel=stylesheet][href~="assets/css/dark.css"]').attr('disabled', 'true');
-        $('link[rel=stylesheet][href~="assets/css/color.css"]').attr('disabled', 'true');
-        $('link[rel=stylesheet][href~="assets/css/light.css"]').removeAttr('disabled');
-        $('#name').html(`<i class="fas fa-sun"></i>`);
-    }
-    themeClicks++;
-});
+})();

@@ -8,26 +8,28 @@
     <script src="https://kit.fontawesome.com/327de1ef48.js"></script>
   	<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <link rel = "stylesheet" type = "text/css" href = "assets/css/main.css">
-    <link rel = "stylesheet" type = "text/css" href = "assets/css/color.css" id="color" name="color">
-    <link rel = "stylesheet" type = "text/css" href = "assets/css/dark.css" id="dark" name="dark">
-    <link rel = "stylesheet" type = "text/css" href = "assets/css/light.css" id="light" name="light">
 	</HEAD>
 	<BODY>
 		<div class="container">
-    	<h3 id="theme">
-      	<span id=name><i class="fas fa-sun"></i></span>
-      	<button id="themeChange"><i class="fas fa-sync-alt"></i></button>
-			</h3>
       <div class="col-1">
-				<section id="about">
-      		<h2 class="text-center" id="fullname">ALEXA ROBINSON</h2>
-        	<p class="text-center">Junior Developer</p>
-        	<h2>
-          	<a href="AlexaRobinsonResume.pdf" target="_blank"><i class="fas fa-file-alt"></i></a>
-          	<a href="https://www.linkedin.com/in/alexa-l-robinson" target="_blank"><i class="fab fa-linkedin"></i></a>
-          	<a href="https://github.com/alexalrobinson" target="_blank"><i class="fab fa-github"></i></a>
-					</h2>
-				</section>
+				<div class="grid">
+					<div id="theme">
+						<label id="switch" class="switch">
+							<input type="checkbox" onchange="toggleTheme()" id="slider">
+							<span class="slider round"></span>
+						</label>
+					</div>
+					<div id="about">
+      			<h2 class="text-center" id="fullname">ALEXA ROBINSON</h2>
+						<p class="text-center">Junior Developer</p>
+						<hr>
+        		<h2>
+          		<a href="AlexaRobinsonResume.pdf" target="_blank"><i class="fas fa-file-alt"></i></a>
+          		<a href="https://www.linkedin.com/in/alexa-l-robinson" target="_blank"><i class="fab fa-linkedin"></i></a>
+          		<a href="https://github.com/alexalrobinson" target="_blank"><i class="fab fa-github"></i></a>
+						</h2>
+					</div>
+				</div>
 			</div>
 			<div class="col-2"><div class="container" id="projects">
     		<div class="project" id="breaddit">
@@ -40,7 +42,7 @@
 		   				The user is able to upvote or downvote a post or comment just once, and it counts towards the creator's "Crumbs".
 						</p>
         		<hr>
-        		<p>
+        		<p class="skills">
         			<span class="skill">JavaScript</span>
           		<span class="skill">jQuery</span>
 							<span class="skill">Node</span>
@@ -49,7 +51,7 @@
           		<span class="skill">Github</span>
           		<span class="skill">Firebase</span>
           		<span class="skill">Cloud 9 AWS</span>
-        		</p>
+						</p>
       		</div>
     		</div>
     		<div class="project" id="studybreak">
@@ -63,7 +65,7 @@
 		    			Happy to give a live demo.
 						</p>
         		<hr>
-        		<p>
+        		<p class="skills">
         			<span class="skill">Bootstrap</span>
           		<span class="skill">HTML</span>
           		<span class="skill">CSS</span>
@@ -81,7 +83,7 @@
 		      		A simple game where you try to figure out the word the letters make descrambled.
 	    			</p>
 						<hr>
-			    	<p>
+			    	<p class="skills">
   	        	<span class="skill">Bootstrap</span>
     	    		<span class="skill">jQuery</span>
       	    	<span class="skill">JavaScript</span>
