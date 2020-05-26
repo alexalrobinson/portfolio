@@ -9,8 +9,8 @@ $(window).scroll(() => {
 });
 
 let themeClicks = 0;
-$('link[rel=stylesheet][href~="../css/dark.css"]').attr('disabled', 'true');
-$('link[rel=stylesheet][href~="../css/color.css"]').attr('disabled', 'true');
+$('link[rel=stylesheet][href~="assets/css/dark.css"]').attr('disabled', 'true');
+$('link[rel=stylesheet][href~="assets/css/color.css"]').attr('disabled', 'true');
 
 $("#themeChange").click(()=>{
     let factor = themeClicks % 3;
