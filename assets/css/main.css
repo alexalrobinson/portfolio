@@ -15,10 +15,44 @@
     grid-auto-rows: minmax(100px, auto);
 }
 
-img {
-    margin: 2px;
-    width: 98%;
-    height: auto;
+.img h1 {
+    visibility: hidden;
+    font-size: 100px;
+}
+
+.img {
+    min-height: 300px;
+    padding: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img:hover {
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+}
+
+.img:hover h1 {
+    visibility: visible;
+}
+
+#studybreak-img {
+    background: url('../files/studybreak.PNG');
+    background-size: cover;
+    background-position: center;
+}
+
+#breaddit-img {
+    background: url('../files/breaddit.PNG');
+    background-size: cover;
+    background-position: center;
+}
+
+#texttwist-img {
+    background: url('../files/texttwist.PNG');
+    background-size: cover;
+    background-position: center;
 }
 
 .theme-light {
@@ -46,6 +80,9 @@ body {
     font-family: 'Oswald', sans-serif;
     background: var(--color-secondary);
     color: var(--font-color);
+    background-image: url(../files/vippng.com-white-qr-code-png-3801575.png);
+    background-position: center;
+    background-repeat: repeat;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -53,14 +90,16 @@ body {
 
 .col-1 {
     width: 27%;
-    background-image: url(../files/vippng.com-white-qr-code-png-3801575.png);
-    background-position: center;
-    background-repeat: repeat;
 }
 
 .col-2 {
     width: 73%;
     background: var(--color-primary);
+    height: 100%;
+}
+
+h1 {
+    margin: -2px 0 1px;
 }
 
 h2 {
@@ -123,11 +162,6 @@ button:focus {
     border: 2px solid var(--font-color);
 }
 
-.skill:hover {
-    color: var(--color-accent);
-    border: 2px solid var(--color-accent)
-}
-
 .title {
     margin-bottom: 2px;
     margin-top: 5px;
@@ -152,24 +186,23 @@ button:focus {
 
 #projects {
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .project {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 45%;
-    margin: 10px auto;
-    padding: 10px;
+    width: 600px;
+    margin: 10px 5px 0;
+}
+
+.project-info {
+    margin: 10px 0;
 }
 
 a:hover {
     color: var(--color-accent);
-}
-
-.project:hover {
-    padding: 8px;
-    border: 2px solid var(--color-accent);
 }
 
 .hidden {
@@ -271,11 +304,4 @@ p {
     #about {
         grid-row: 2;
     }
-  }
-
-  @media only screen and (max-width: 1200px) {
-      /* for tablets/med screens: */
-      .project {
-        width: 100%;
-      }
   }
